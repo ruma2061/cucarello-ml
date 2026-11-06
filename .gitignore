@@ -1,0 +1,25 @@
+# remote server files
+/remote
+
+# of course
+.env
+
+# Environment caches (if applicable)
+.pytest_cache/
+.mypy_cache/
+
+# Python bytecode and cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local environments, datasets, and generated experiment artifacts
+.venv/
+*.egg-info/
+/data/raw/*
+!/data/raw/.gitkeep
+/data/processed/*
+!/data/processed/.gitkeep
+/reports/*.json
+/models/*.joblib
+/models/*.pkl

@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "soccer-ml"
+version = "0.1.0"
+description = "Starter experiments for soccer performance classification"
+requires-python = ">=3.10"
+dependencies = ["pandas>=2.0", "scikit-learn>=1.3"]
+
+[project.optional-dependencies]
+scraping = ["soccerdata>=2026.43.0,<2027"]
+
+[project.scripts]
+soccer-ml = "soccer_ml.experiment:main"
+soccer-download-fbref = "soccer_ml.download_fbref:main"
+soccer-prepare-transfermarkt = "soccer_ml.prepare_transfermarkt:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

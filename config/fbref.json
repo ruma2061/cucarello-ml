@@ -1,0 +1,33 @@
+{
+  "start_year": 2010,
+  "end_year": null,
+  "leagues": [
+    "ENG-Premier League",
+    "FRA-Ligue 1",
+    "ITA-Serie A",
+    "GER-Bundesliga",
+    "ESP-La Liga"
+  ],
+  "output_dir": "data/raw/fbref",
+  "season_stats": ["standard", "keeper", "shooting", "playing_time", "misc"],
+  "team_match_stats": ["schedule", "keeper", "shooting", "misc"],
+  "player_match_stats": ["summary", "keepers"],
+  "opponent_stats": true,
+  "lineups": true,
+  "events": true,
+  "request_delay": 20.0,
+  "request_jitter": 10.0,
+  "retries": 0,
+  "retry_backoff": 120.0,
+  "retry_error_hours": 24.0,
+  "block_cooldown_hours": 24.0,
+  "refresh_hours": 24.0,
+  "retry_missing_hours": 168.0,
+  "cache_max_age_days": 30,
+  "force": false,
+  "watch": false,
+  "poll_hours": 24.0,
+  "max_matches": null,
+  "browser_path": null,
+  "headless": true
+}
